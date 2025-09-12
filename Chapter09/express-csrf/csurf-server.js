@@ -24,11 +24,12 @@ app.use(
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => {
+app.get('/', csrf, (req, res) => {
   if (req.session.user) return res.redirect('/account');
   res.send(`
     <h1>Social Media Account - Login</h1>
     <form method="POST" action="/">
+      <input type="hidden" name="_csrf" value="${req.csrfToken()}">
       <label> Username <input name=username> </label>
       <label> Password <input name=password type=password> </label>
       <input type=submit>
@@ -36,7 +37,7 @@ app.get('/', (req, res) => {
   `);
 });
 
-app.post('/', (req, res) => {
+app.post('/', csrf, (req, res) => {
   if (
     req.body.username === mockUser.username &&
     req.body.password === mockUser.password
