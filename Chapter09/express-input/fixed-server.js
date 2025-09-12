@@ -1,4 +1,5 @@
 const express = require('express');
+const escapeHtml = require('escape-html');
 const app = express();
 
 app.get('/', (req, res) => {
@@ -6,7 +7,7 @@ app.get('/', (req, res) => {
     let msg = req.query.msg;
     if (Array.isArray(msg)) msg = msg.pop();
     const upper = (msg || '').toUpperCase();
-    res.send(upper);
+    res.send(escapeHtml(upper));
   });
 });
 
