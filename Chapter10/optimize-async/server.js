@@ -1,9 +1,17 @@
 const { MongoClient } = require('mongodb');
 const express = require('express');
+const rateLimit = require('express-rate-limit');
 
 const URL = 'mongodb://localhost:27017/';
 const app = express();
 
+// Set up rate limiter: maximum of 100 requests per 15 minutes per IP
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+});
+
+app.use(limiter);
 (async () => {
   try {
     const client = new MongoClient(URL);
