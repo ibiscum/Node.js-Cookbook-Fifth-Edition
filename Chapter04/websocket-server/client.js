@@ -1,9 +1,9 @@
-const fs = require('fs');
-const http = require('http');
+import { readFileSync } from 'fs';
+import { createServer } from 'http';
 
-const index = fs.readFileSync('public/index.html');
+const index = readFileSync('public/index.html');
 
-const server = http.createServer((req, res) => {
+const server = createServer((req, res) => {
   res.setHeader('Content-Type', 'text/html');
   res.end(index);
 });

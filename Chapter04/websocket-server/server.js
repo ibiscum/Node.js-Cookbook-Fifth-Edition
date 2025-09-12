@@ -1,6 +1,6 @@
-const WebSocket = require('ws');
+import { Server } from 'ws';
 
-const WebSocketServer = new WebSocket.Server({
+const WebSocketServer = new Server({
   port: 3000
 });
 

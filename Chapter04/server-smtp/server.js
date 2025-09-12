@@ -1,4 +1,4 @@
-const SMTPServer = require('smtp-server').SMTPServer;
+import { SMTPServer } from 'smtp-server';
 
 const PORT = 4321;
 
