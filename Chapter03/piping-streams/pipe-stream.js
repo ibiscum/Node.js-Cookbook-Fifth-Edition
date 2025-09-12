@@ -1,5 +1,5 @@
-const fs = require('node:fs');
+import { createReadStream } from 'node:fs';
 
-const rs = fs.createReadStream('file.txt');
+const rs = createReadStream('file.txt');
 
 rs.pipe(process.stdout);

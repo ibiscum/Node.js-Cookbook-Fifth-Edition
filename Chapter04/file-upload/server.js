@@ -1,13 +1,17 @@
-const fs = require('fs');
-const http = require('http');
-const path = require('path');
+import { readFileSync } from 'fs';
+import { createServer, STATUS_CODES } from 'http';
+import { join } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-const form = fs.readFileSync(path.join(__dirname, 'public', 'form.html'));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-const { formidable } = require('formidable');
+const form = readFileSync(join(__dirname, 'public', 'form.html'));
 
-http
-  .createServer((req, res) => {
+import { formidable } from 'formidable';
+
+createServer((req, res) => {
     if (req.method === 'GET') {
       get(res);
       return;
@@ -32,7 +36,7 @@ function get (res) {
 
 function error (code, res) {
   res.statusCode = code;
-  res.end(http.STATUS_CODES[code]);
+  res.end(STATUS_CODES[code]);
 }
 
 function post (req, res) {

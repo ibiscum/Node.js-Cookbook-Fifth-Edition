@@ -1,5 +1,5 @@
-const fs = require('fs');
-const { pipeline, Transform } = require('stream');
+import { createReadStream, createWriteStream } from 'fs';
+import { pipeline, Transform } from 'stream';
 
 const uppercase = new Transform({
   transform (chunk, encoding, callback) {
@@ -9,9 +9,9 @@ const uppercase = new Transform({
 });
 
 pipeline(
-  fs.createReadStream('./file.txt'),
+  createReadStream('./file.txt'),
   uppercase,
-  fs.createWriteStream('./newFile.txt'),
+  createWriteStream('./newFile.txt'),
   (err) => {
     if (err) {
       console.error('Pipeline failed.', err);

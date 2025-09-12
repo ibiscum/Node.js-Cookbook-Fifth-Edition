@@ -1,6 +1,6 @@
-const fs = require('node:fs');
+import { createReadStream, createWriteStream } from 'node:fs';
 
-const rs = fs.createReadStream('./file.txt');
-const newFile = fs.createWriteStream('./newFile.txt');
+const rs = createReadStream('./file.txt');
+const newFile = createWriteStream('./newFile.txt');
 
 rs.map((chunk) => chunk.toString().toUpperCase()).pipe(newFile);

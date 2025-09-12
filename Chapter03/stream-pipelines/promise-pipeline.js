@@ -1,6 +1,6 @@
-const fs = require("node:fs");
-const { Transform } = require('node:stream');
-const { pipeline } = require('node:stream/promises');
+import { createReadStream, createWriteStream } from "node:fs";
+import { Transform } from 'node:stream';
+import { pipeline } from 'node:stream/promises';
 
 const uppercase = new Transform({
     transform(chunk, encoding, callback) {
@@ -11,9 +11,9 @@ const uppercase = new Transform({
 
 async function run() {
     await pipeline(
-        fs.createReadStream("./file.txt"),
+        createReadStream("./file.txt"),
         uppercase,
-        fs.createWriteStream("./newFile.txt")
+        createWriteStream("./newFile.txt")
     );
     console.log("Pipeline succeeded.");
 }

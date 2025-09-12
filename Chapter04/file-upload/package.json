@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "private":true,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "formidable": "^3.5.1"
+    "formidable": "^3.5.4"
   }
 }

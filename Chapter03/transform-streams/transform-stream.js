@@ -1,9 +1,9 @@
-const fs = require('node:fs');
+import { createReadStream, createWriteStream } from 'node:fs';
 
-const { Transform } = require('node:stream');
-const rs = fs.createReadStream('./file.txt');
+import { Transform } from 'node:stream';
+const rs = createReadStream('./file.txt');
 
-const newFile = fs.createWriteStream('./newFile.txt');
+const newFile = createWriteStream('./newFile.txt');
 
 const uppercase = new Transform({
   transform (chunk, encoding, callback) {
