@@ -1,5 +1,5 @@
-const fs = require('node:fs');
-const file = fs.createWriteStream('./file.txt');
+import { createWriteStream } from 'node:fs';
+const file = createWriteStream('./file.txt');
 
 for (let i = 0; i <= 100000; i++) {
   file.write(

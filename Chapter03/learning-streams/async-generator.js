@@ -1,4 +1,4 @@
-const { Readable } = require('node:stream');
+import { Readable } from 'node:stream';
 
 async function * generate () {
   yield 'Node.js';

@@ -1,6 +1,6 @@
-const fs = require('node:fs');
+import { createReadStream } from 'node:fs';
 
-const rs = fs.createReadStream('./file.txt');
+const rs = createReadStream('./file.txt');
 
 rs.on('data', (data) => {
   console.log('Read chunk:', data.toString());

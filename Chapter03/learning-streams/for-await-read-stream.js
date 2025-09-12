@@ -1,6 +1,6 @@
-const fs = require('node:fs');
+import { createReadStream } from 'node:fs';
 
-const rs = fs.createReadStream('./file.txt');
+const rs = createReadStream('./file.txt');
 
 async function run () {
   for await (const chunk of rs) {

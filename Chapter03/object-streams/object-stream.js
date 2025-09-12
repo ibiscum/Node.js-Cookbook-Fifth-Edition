@@ -1,5 +1,5 @@
-const { Transform } = require('node:stream');
-const { stringify } = require('ndjson');
+import { Transform } from 'node:stream';
+import { stringify } from 'ndjson';
 
 const Name = Transform({
   objectMode: true,

@@ -1,6 +1,6 @@
-const fs = require('node:fs');
+import { createReadStream } from 'node:fs';
 
-const rs = fs.createReadStream('/dev/urandom');
+const rs = createReadStream('/dev/urandom');
 
 let size = 0;
 rs.on('data', (data) => {
