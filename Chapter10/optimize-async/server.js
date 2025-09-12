@@ -30,7 +30,8 @@ app.use(limiter);
 
         res.send(`Average of all values is ${average}.`);
       } catch (err) {
-        res.send(err);
+        console.error(err); // Log the error (including stack trace) server-side
+        res.status(500).send("An internal server error occurred."); // Send safe error message to user
       }
     });
 
