@@ -50,7 +50,7 @@ app.post('/', (req, res) => {
   else res.redirect('/');
 });
 
-        <input type="hidden" name="_csrf" value="${req.csrfToken()}">
+<input type="hidden" name="_csrf" value="${req.csrfToken()}"/>
 app.get('/account', (req, res) => {
   if (!req.session.user) return res.redirect('/');
   res.send(`
