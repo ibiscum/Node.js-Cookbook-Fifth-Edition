@@ -1,11 +1,10 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+import { createServer, STATUS_CODES } from 'http';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
-const form = fs.readFileSync(path.join(__dirname, 'public', 'form.html'));
+const form = readFileSync(join(__dirname, 'public', 'form.html'));
 
-http
-  .createServer((req, res) => {
+createServer((req, res) => {
     if (req.method === 'GET') {
       get(res); return;
     }
@@ -33,11 +32,11 @@ function post (req, res) {
   let input = '';
   req.on('data', (chunk) => { input += chunk.toString(); });
   req.on('end', () => {
-    console.log(input); res.end(http.STATUS_CODES[200]);
+    console.log(input); res.end(STATUS_CODES[200]);
   });
 }
 
 function error (code, res) {
   res.statusCode = code;
-  res.end(http.STATUS_CODES[code]);
+  res.end(STATUS_CODES[code]);
 }

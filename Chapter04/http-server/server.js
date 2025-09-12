@@ -1,9 +1,9 @@
-const http = require('http');
+import { createServer, STATUS_CODES } from 'http';
 
 const HOSTNAME = process.env.HOSTNAME || '0.0.0.0';
 const PORT = process.env.PORT || 3000;
 
-const server = http.createServer((req, res) => {
+const server = createServer((req, res) => {
   if (req.method !== 'GET') return error(res, 405);
   if (req.url === '/todo') return todo(res);
   if (req.url === '/') return index(res);
@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
 
 function error (res, code) {
   res.statusCode = code;
-  res.end(`{"error": "${http.STATUS_CODES[code]}"}`);
+  res.end(`{"error": "${STATUS_CODES[code]}"}`);
 }
 
 function todo (res) {

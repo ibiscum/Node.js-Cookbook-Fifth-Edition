@@ -1,5 +1,5 @@
-const http = require('http');
-const https = require('https');
+import http from 'http';
+import { request } from 'https';
 
 // http.get('http://example.com', (res) => res.pipe(process.stdout));
 
@@ -16,7 +16,7 @@ const opts = {
   }
 };
 
-const req = https.request(opts, (res) => {
+const req = request(opts, (res) => {
   process.stdout.write('Status Code: ' + res.statusCode + '\n');
   process.stdout.write('Body: ');
   res.pipe(process.stdout);
