@@ -1,6 +1,6 @@
-require('dotenv').config();
-const pg = require('pg');
-const db = new pg.Client();
+// require('dotenv').config();
+import { Client } from 'pg';
+const db = new Client();
 
 const task = process.argv[2];
 

@@ -1,6 +1,8 @@
 {
   "name": "postgres-app",
   "version": "1.0.0",
+  "private":true,
+  "type": "module",
   "description": "",
   "main": "tasks.js",
   "scripts": {
@@ -10,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "pg": "^8.11.4"
+    "dotenv": "^17.2.2",
+    "pg": "^8.16.3"
   }
 }

@@ -1,10 +1,10 @@
 const fastify = require('fastify')();
 
-const mercurius = require('mercurius');
+import mercurius from 'mercurius';
 
-const { readFileSync } = require('fs');
+import { readFileSync } from 'fs';
 
-const { resolvers } = require('./resolvers');
+import { resolvers } from './resolvers';
 
 const schema = readFileSync('./schema.graphql', 'utf-8');
 

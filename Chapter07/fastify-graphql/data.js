@@ -16,4 +16,4 @@ const books = [
 
 ];
 
-module.exports = { authors, books };
+export default { authors, books };

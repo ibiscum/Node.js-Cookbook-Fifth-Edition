@@ -1,4 +1,4 @@
-const { authors, books } = require('./data');
+import { authors, books } from './data';
 
 const resolvers = {
 
@@ -24,4 +24,4 @@ const resolvers = {
 
 };
 
-module.exports = { resolvers };
+export default { resolvers };

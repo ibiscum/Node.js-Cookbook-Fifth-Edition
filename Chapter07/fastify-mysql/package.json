@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fastify/mysql": "^4.2.0",
-    "fastify": "^4.26.2"
+    "@fastify/mysql": "^5.0.2",
+    "fastify": "^5.6.0"
     }
 }
