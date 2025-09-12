@@ -1,5 +1,4 @@
-const { lowercase, uppercase, capitalize } =
-require('./textUtils');
+import { lowercase, uppercase, capitalize } from './textUtils';
 
 describe('textUtils', () => {
   test('converts "HELLO WORLD" to all lowercase', () => {

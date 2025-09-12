@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sinon": "^17.0.1"
+    "sinon": "^21.0.0"
   }
 }

@@ -9,4 +9,4 @@ function capitalize (str) {
   return str.charAt(0).toUpperCase() +
    str.slice(1).toLowerCase();
 }
-module.exports = { lowercase, uppercase, capitalize };
+export default { lowercase, uppercase, capitalize };

@@ -1,9 +1,9 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-const bodyParser = require('body-parser');
+import { json, urlencoded } from 'body-parser';
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(json());
+app.use(urlencoded({ extended: false }));
 
 app.post('/', (req, res) => {
   res.json(req.body);
