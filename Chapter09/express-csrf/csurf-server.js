@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const csurf = require('csurf');
+const escape = require('escape-html');
 const csrf = csurf();
 const app = express();
 
@@ -50,10 +51,10 @@ app.get('/account', csrf, (req, res) => {
   if (!req.session.user) return res.redirect('/');
   res.send(`
       <h1>Social Media Account - Settings</h1>
-      <p> Email: ${mockUser.email} </p>
+      <p> Email: ${escape(mockUser.email)} </p>
       <form method="POST" action=/update>
         <input type=hidden name=_csrf value="${req.csrfToken()}">
-        <input name=email value="${mockUser.email}">
+        <input name=email value="${escape(mockUser.email)}">
         <input type=submit value=Update >
       </form>
     `);
