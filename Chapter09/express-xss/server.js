@@ -1,4 +1,5 @@
 const express = require('express');
+const escape = require('escape-html');
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.get('/', (req, res) => {
         ${status} 
       </div> 
       <div> 
-      <a href="${previous}${token}/${lang}">Back</a> 
+      <a href="${escape(previous)}${escape(token)}/${escape(lang)}">Back</a> 
       </div> 
     `);
   });
