@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/', (req, res) => {
-  res.send(req.body);
+  res.json(req.body);
 });
 
 app.listen(3000, () => {
