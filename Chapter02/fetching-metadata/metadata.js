@@ -1,9 +1,9 @@
-const fs = require('node:fs');
+import { statSync } from 'node:fs';
 const file = process.argv[2];
 
 function printMetadata (file) {
   try {
-    const fileStats = fs.statSync(file);
+    const fileStats = statSync(file);
     console.log(fileStats);
   } catch (err) {
     console.error('Error reading file path:', file);

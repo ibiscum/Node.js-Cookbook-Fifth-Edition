@@ -1,11 +1,11 @@
-const fs = require('node:fs');
+import { chmodSync, constants } from 'node:fs';
 const file = './file.txt';
 
-fs.chmodSync(
+chmodSync(
   file,
-  fs.constants.S_IRUSR |
-    fs.constants.S_IWUSR |
-    fs.constants.S_IRGRP |
-    fs.constants.S_IWGRP |
-    fs.constants.S_IROTH
+  constants.S_IRUSR |
+    constants.S_IWUSR |
+    constants.S_IRGRP |
+    constants.S_IWGRP |
+    constants.S_IROTH
 );

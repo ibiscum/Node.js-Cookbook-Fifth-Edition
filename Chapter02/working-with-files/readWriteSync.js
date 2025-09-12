@@ -1,10 +1,10 @@
-const fs = require('node:fs');
-const path = require('node:path');
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 
-const filepath = path.join(process.cwd(), 'hello.txt');
+const filepath = join(process.cwd(), 'hello.txt');
 
-const contents = fs.readFileSync(filepath, 'utf8');
+const contents = readFileSync(filepath, 'utf8');
 console.log('File Contents:', contents);
 const upperContents = contents.toUpperCase();
-fs.writeFileSync(filepath, upperContents);
+writeFileSync(filepath, upperContents);
 console.log('File updated.');

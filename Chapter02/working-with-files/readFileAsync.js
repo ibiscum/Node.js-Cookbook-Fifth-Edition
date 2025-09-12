@@ -1,9 +1,9 @@
-const fs = require('node:fs');
-const path = require('node:path');
+import { readFile, writeFile } from 'node:fs';
+import { join } from 'node:path';
 
-const filepath = path.join(process.cwd(), 'hello.txt');
+const filepath = join(process.cwd(), 'hello.txt');
 
-fs.readFile(filepath, 'utf8', (err, contents) => {
+readFile(filepath, 'utf8', (err, contents) => {
   if (err) {
     return console.log(err);
   }
@@ -13,7 +13,7 @@ fs.readFile(filepath, 'utf8', (err, contents) => {
 });
 
 function updateFile (filepath, contents) {
-  fs.writeFile(filepath, contents, function (err) {
+  writeFile(filepath, contents, function (err) {
     if (err) throw err;
     console.log('File updated.');
   });
