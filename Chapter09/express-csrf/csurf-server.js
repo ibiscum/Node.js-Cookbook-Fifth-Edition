@@ -18,7 +18,7 @@ app.use(
     name: 'SESSIONID',
     resave: false,
     saveUninitialized: false,
-    cookie: { sameSite: true }
+    cookie: { sameSite: true, secure: true }
   })
 );
 
