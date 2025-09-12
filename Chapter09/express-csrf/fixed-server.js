@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const escape = require('escape-html');
+const lusca = require('lusca');
 const app = express();
 
 const mockUser = {
@@ -21,12 +22,14 @@ app.use(
 );
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(lusca.csrf());
 
 app.get('/', (req, res) => {
   if (req.session.user) return res.redirect('/account');
   res.send(`
     <h1>Social Media Account - Login</h1>
     <form method="POST" action="/">
+      <input type="hidden" name="_csrf" value="${escape(req.csrfToken())}">
       <label> Username <input name=username> </label>
       <label> Password <input name=password type=password> </label>
       <input type=submit>
@@ -45,6 +48,7 @@ app.post('/', (req, res) => {
   else res.redirect('/');
 });
 
+        <input type="hidden" name="_csrf" value="${escape(req.csrfToken())}">
 app.get('/account', (req, res) => {
   if (!req.session.user) return res.redirect('/');
   res.send(`
