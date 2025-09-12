@@ -14,7 +14,11 @@ app.use(
     secret: 'Node Cookbook',
     name: 'SESSIONID',
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
+    cookie: {
+      secure: true,
+      httpOnly: true
+    }
   })
 );
 
