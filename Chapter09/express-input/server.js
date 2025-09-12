@@ -1,10 +1,11 @@
 const express = require('express');
+const escape = require('escape-html');
 const app = express();
 
 app.get('/', (req, res) => {
   asyncWork(() => {
     const upper = (req.query.msg || '').toUpperCase();
-    res.send(upper);
+    res.send(escape(upper));
   });
 });
 
