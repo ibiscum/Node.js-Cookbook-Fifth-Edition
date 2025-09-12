@@ -12,8 +12,18 @@
         output.innerHTML += log('Sent', msg);
     });
 
+    // Helper to escape HTML special chars to prevent XSS
+    function escapeHTML(str) {
+        return String(str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+    }
+
     function log(event, msg) {
-        return '<p>' + event + ': ' + msg + '</p>';
+        return '<p>' + escapeHTML(event) + ': ' + escapeHTML(msg) + '</p>';
     }
 
     ws.onmessage = function (e) {
