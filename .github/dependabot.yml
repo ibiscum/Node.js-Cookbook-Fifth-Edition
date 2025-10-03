@@ -9,3 +9,7 @@ updates:
     directory: "/Chapter03/object-streams" # Location of package manifests
     schedule:
       interval: "monthly"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/Chapter04/file-upload" # Location of package manifests
+    schedule:
+      interval: "monthly"
