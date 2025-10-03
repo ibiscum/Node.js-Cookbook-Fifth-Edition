@@ -13,3 +13,7 @@ updates:
     directory: "/Chapter04/file-upload" # Location of package manifests
     schedule:
       interval: "monthly"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/Chapter04/server-smtp" # Location of package manifests
+    schedule:
+      interval: "monthly"
