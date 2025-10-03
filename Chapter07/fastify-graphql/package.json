@@ -10,7 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^5.6.0",
-    "mercurius": "^16.2.0"
+    "fastify": "^5.6.1",
+    "mercurius": "^16.4.0",
+    "npm-check-updates": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0"
   }
 }
