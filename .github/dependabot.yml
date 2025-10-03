@@ -21,3 +21,7 @@ updates:
     directory: "/Chapter04/websocket-server" # Location of package manifests
     schedule:
       interval: "monthly"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/Chapter08/testing-with-jest" # Location of package manifests
+    schedule:
+      interval: "monthly"
