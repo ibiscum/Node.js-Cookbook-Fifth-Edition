@@ -1,4 +1,4 @@
-const { lowercase, uppercase, capitalize } = require('./textUtils.mjs');
+const { lowercase, uppercase, capitalize } = require('./textUtils.js');
 
 describe('textUtils', () => {
   test('converts "HELLO WORLD" to all lowercase', () => {
