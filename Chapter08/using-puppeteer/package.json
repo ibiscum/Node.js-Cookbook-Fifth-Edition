@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "puppeteer": "^24.20.0"
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "globals": "^16.4.0",
+    "puppeteer": "^24.23.0"
   }
 }
