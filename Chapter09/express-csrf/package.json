@@ -4,7 +4,7 @@
     "cookie": ">=0.7.0",
     "csurf": "^1.11.0",
     "escape-html": "^1.0.3",
-    "express": "^5.1.0",
+    "express": "^5.2.0",
     "express-session": "^1.18.2",
     "lusca": "^1.7.0"
   }
