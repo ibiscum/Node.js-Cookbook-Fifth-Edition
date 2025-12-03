@@ -1,7 +1,7 @@
 require('http')
-  .createServer((req, res) => {
+  .createServer((req) => {
     console.log(
-      req.connection.remoteAddress,
+      req.socket.remoteAddress,
       Buffer.from(req.url.split('/attack/')[1], 'base64').toString().trim()
     );
   })

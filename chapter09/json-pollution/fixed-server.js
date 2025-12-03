@@ -37,6 +37,7 @@ const greeting = (req, res) => {
     try {
       data = JSON.parse(data);
     } catch (e) {
+      console.error('Invalid JSON received: ', e);
       res.end('');
       return;
     }
@@ -46,7 +47,8 @@ const greeting = (req, res) => {
       return;
     }
 
-    if (data.hasOwnProperty('name')) {
+    const propName = Object.prototype.hasOwnProperty.call(data, 'name');
+    if (propName) {
       res.end(`${data.msg} ${data.name}`);
     } else {
       res.end(data.msg);

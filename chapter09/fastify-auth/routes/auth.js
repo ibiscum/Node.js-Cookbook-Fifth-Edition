@@ -5,7 +5,7 @@ const users = [
   }
 ];
 
-async function routes (fastify, options) {
+async function routes (fastify) {
   fastify.get('/login', async (request, reply) => {
     return reply.view('login.ejs', { fail: false });
   });
