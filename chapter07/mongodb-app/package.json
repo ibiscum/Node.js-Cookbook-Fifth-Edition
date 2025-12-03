@@ -1,4 +1,10 @@
 {
+  "name": "@chapter07/mongodb-app",
+  "version": "1.0.0",
+  "private":true,
+  "type": "module",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "mongodb": "^6.19.0"
   }
