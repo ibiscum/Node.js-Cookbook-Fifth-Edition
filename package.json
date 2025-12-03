@@ -1,0 +1,26 @@
+{
+  "name": "node.js-cookbook",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^9.39.1",
+    "ndjson": "^2.0.0"
+  },
+  "workspaces": [
+    "chapter03/object-streams",
+    "chapter04/streams-fs",
+    "chapter04/server-smtp",
+    "chapter05/ecmascript-modules",
+    "chapter12/core-debug-logs",
+    "chapter12/debugging-with-chrome"
+  ]
+}

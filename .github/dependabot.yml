@@ -6,22 +6,10 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/Chapter03/object-streams" # Location of package manifests
+    directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/Chapter04/file-upload" # Location of package manifests
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/Chapter04/server-smtp" # Location of package manifests
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/Chapter04/websocket-server" # Location of package manifests
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/Chapter08/testing-with-jest" # Location of package manifests
+  - package-ecosystem: "github-actions" # See documentation for possible values
+    directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
