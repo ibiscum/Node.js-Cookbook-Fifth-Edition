@@ -1,4 +1,4 @@
-// require('dotenv').config();
+import "dotenv/config.js";
 import { Client } from 'pg';
 const db = new Client();
 
