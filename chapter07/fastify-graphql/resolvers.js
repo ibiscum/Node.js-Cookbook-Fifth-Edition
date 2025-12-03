@@ -1,27 +1,18 @@
-import { authors, books } from './data';
+import { authors, books } from './data.js';
 
 const resolvers = {
-
   Query: {
-
     books: () => books,
-
     authors: () => authors
-
   },
 
   Book: {
-
     author: (parent) => authors.find(author => author.id === parent.authorId)
-
   },
 
   Author: {
-
     books: (parent) => books.filter(book => book.authorId === parent.id)
-
   }
-
 };
 
 export default { resolvers };

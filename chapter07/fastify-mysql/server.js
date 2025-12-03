@@ -1,6 +1,7 @@
-const fastify = require('fastify')({ logger: true });
+import Fastify from 'fastify';
+const fastify = Fastify({ logger: true });
 
-fastify.register(require('@fastify/mysql'), {
+fastify.register(import('@fastify/mysql'), {
   connectionString: 'mysql://root:PASSWORD@localhost/mysql'
 });
 

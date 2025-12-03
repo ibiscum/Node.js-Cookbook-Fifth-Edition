@@ -1,8 +1,10 @@
 {
-  "name": "fastify-mysql",
+  "name": "@chapter07/fastify-mysql",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
