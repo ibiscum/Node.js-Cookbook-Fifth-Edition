@@ -1,7 +1,7 @@
 import http from 'http';
 import { request } from 'https';
 
-// http.get('http://example.com', (res) => res.pipe(process.stdout));
+http.get('http://example.com', (res) => res.pipe(process.stdout));
 
 const payload = `{
 "name": "Laddie",
