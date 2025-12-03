@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import sinon from 'sinon';
 import { getGitHubUser } from './github.mjs';
 
-test('Get GitHub user by username', async (t) => {
+test('Get GitHub user by username', async () => {
   const fakeResponse = Promise.resolve({
     json: () => Promise.resolve({
       id: 3430433,
