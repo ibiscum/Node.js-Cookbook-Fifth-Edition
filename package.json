@@ -31,6 +31,8 @@
     "chapter07/postgres-object-app",
     "chapter07/mongodb-app",
     "chapter07/redis-app",
+    "chapter08/testing-with-node",
+    "chapter08/testing-with-jest",
     "chapter10/benchmarking-http",
     "chapter10/benchmarking-views",
     "chapter12/core-debug-logs",

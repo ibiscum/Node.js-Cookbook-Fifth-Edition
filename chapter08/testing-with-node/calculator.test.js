@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert';
 
-import { add } from './calculator.mjs';
+import { add } from './calculator.js';
 
 test('add', async (t) => {
   await t.test('add integers', () => {
