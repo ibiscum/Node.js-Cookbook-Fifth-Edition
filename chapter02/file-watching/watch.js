@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 const file = join(process.cwd(), 'file.txt');
 
-watchFile(file, (current, previous) => {
+watchFile(file, (current) => {
   const formattedTime = new Intl.DateTimeFormat('en-GB', {
     dateStyle: 'full',
     timeStyle: 'long'

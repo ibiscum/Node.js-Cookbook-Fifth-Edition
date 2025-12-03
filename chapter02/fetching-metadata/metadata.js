@@ -6,7 +6,7 @@ function printMetadata (file) {
     const fileStats = statSync(file);
     console.log(fileStats);
   } catch (err) {
-    console.error('Error reading file path:', file);
+    console.error('Error reading file path:', file, err.message);
   }
 }
 
