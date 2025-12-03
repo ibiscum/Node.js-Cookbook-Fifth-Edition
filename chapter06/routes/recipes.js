@@ -61,6 +61,8 @@ function recipesPlugin (app, opts, next) {
 }
 
 async function menuHandler (request, reply) {
+  console.log(request.headers);
+  console.log(reply.getHeaders());
   const recipes = await this.source.readRecipes();
   return recipes;
 }

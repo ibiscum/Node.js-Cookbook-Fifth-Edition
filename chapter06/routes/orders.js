@@ -1,4 +1,4 @@
-async function ordersPlugin (app, opts) {
+async function ordersPlugin (app) {
   const orderJsonSchema = {
     type: 'object',
     required: ['table', 'dishes'],
@@ -65,6 +65,8 @@ async function ordersPlugin (app, opts) {
       }
     },
     handler: async function readOrders (request, reply) {
+      console.log(request.headers);
+      console.log(reply.getHeaders());
       const orders = await this.source.readOrders({ status: 'pending' });
 
       const recipesIds = orders.flatMap(order => order.items.map(item => item.id));
