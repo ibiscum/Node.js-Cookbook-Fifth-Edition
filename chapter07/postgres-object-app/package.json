@@ -1,8 +1,10 @@
 {
-  "name": "postgres-app",
+  "name": "@chapter07/postgres-object-app",
   "version": "1.0.0",
   "description": "",
   "main": "tasks.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

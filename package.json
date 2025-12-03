@@ -28,6 +28,7 @@
     "chapter07/fastify-mysql",
     "chapter07/mysql-app",
     "chapter07/postgres-app",
+    "chapter07/postgres-object-app",
     "chapter10/benchmarking-http",
     "chapter10/benchmarking-views",
     "chapter12/core-debug-logs",
