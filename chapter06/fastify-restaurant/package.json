@@ -1,9 +1,9 @@
 {
-  "name": "fastify-restaurant-api",
+  "name": "@chapter06/fastify-restaurant",
   "version": "1.0.0",
   "description": "Node.js Cookbook: Chapter 6",
   "type": "module",
-  "main": "server.js",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "mongo:start": "docker run --rm -d -p 27017:27017 --name fastify-restaurant-api-db mongo:6",

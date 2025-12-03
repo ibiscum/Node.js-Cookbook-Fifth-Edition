@@ -23,7 +23,7 @@
     "chapter05/consuming-modules",
     "chapter05/ecmascript-modules",
     "chapter05/temperature-converter",
-    "chapter06",
+    "chapter06/fastify-restaurant",
     "chapter07/fastify-graphql",
     "chapter07/fastify-mysql",
     "chapter07/mysql-app",

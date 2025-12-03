@@ -12,3 +12,13 @@ This chapter introduces [Fastify], the fastest and with low overhead web framewo
 1. Configuring and testing a Fastify Application
 
 [Fastify]: https://www.fastify.dev/
+
+## Docker
+    
+    docker run --publish 27017:27017 --name node-mongo --detach mongo
+
+## Routes
+
+    curl "http://localhost:3000/menu"
+    curl -d "recipe" "http://localhost:3000/recipes"
+
