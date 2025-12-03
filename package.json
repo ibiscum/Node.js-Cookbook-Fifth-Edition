@@ -19,7 +19,13 @@
     "chapter03/object-streams",
     "chapter04/streams-fs",
     "chapter04/server-smtp",
+    "chapter05/websocket-server",
+    "chapter05/consuming-modules",
     "chapter05/ecmascript-modules",
+    "chapter05/temperature-converter",
+    "chapter06",
+    "chapter10/benchmarking-http",
+    "chapter10/benchmarking-views",
     "chapter12/core-debug-logs",
     "chapter12/debugging-with-chrome"
   ]
