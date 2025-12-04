@@ -1,8 +1,10 @@
 {
-  "name": "stubbing-http-requests",
+  "name": "@chapter08/stubbing-http-requests",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private":true,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

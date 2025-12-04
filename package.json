@@ -33,6 +33,8 @@
     "chapter07/redis-app",
     "chapter08/testing-with-node",
     "chapter08/testing-with-jest",
+    "chapter08/stubbing-http-requests",
+    "chapter08/using-puppeteer",
     "chapter10/benchmarking-http",
     "chapter10/benchmarking-views",
     "chapter12/core-debug-logs",
