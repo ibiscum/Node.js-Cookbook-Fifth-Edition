@@ -1,16 +1,20 @@
 {
-  "name": "flamegraph-app",
+  "name": "@chapter10/flamegraph-app",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "0x": "^4.1.4",
+    "autocannon": "^8.0.0",
     "cookie-parser": "~1.4.7",
     "debug": "~4.4.1",
     "express": "~5.2.0",
     "http-errors": "~2.0.0",
-    "jade": "^0.29.0",
-    "morgan": "~1.10.1"
+    "morgan": "~1.10.1",
+    "pug": "^3.0.3",
+    "smtp-server": "1.17.0"
   }
 }
