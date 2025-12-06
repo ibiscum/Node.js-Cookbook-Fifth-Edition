@@ -132,4 +132,5 @@ dist
 node_modules
 package-lock.json
 dist
-flamegraph.html
+**/*.0x
+**/flamegraph.html

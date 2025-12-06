@@ -1,8 +1,11 @@
 {
-  "name": "core-debug-logs",
+  "name": "@chapter12/core-debug-logs",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
+  "private":true,
   "scripts": {
+    "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,6 +13,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.2.0"
+    "express": "^5.2.1"
   }
 }

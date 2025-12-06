@@ -37,7 +37,9 @@
     "chapter08/using-puppeteer",
     "chapter10/benchmarking-http",
     "chapter10/benchmarking-views",
+    "chapter10/optimize-async",
     "chapter10/flamegraph-app",
+    "chapter11/bookstore-web-app",
     "chapter12/core-debug-logs",
     "chapter12/debugging-with-chrome"
   ]

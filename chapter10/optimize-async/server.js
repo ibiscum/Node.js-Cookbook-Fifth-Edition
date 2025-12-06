@@ -1,6 +1,6 @@
-const { MongoClient } = require('mongodb');
-const express = require('express');
-const rateLimit = require('express-rate-limit');
+import { MongoClient } from 'mongodb';
+import express from 'express';
+import rateLimit from 'express-rate-limit';
 
 const URL = 'mongodb://localhost:27017/';
 const app = express();
