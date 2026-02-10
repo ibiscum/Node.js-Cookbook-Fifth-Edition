@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.0"
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "semistandard": "17.0.0"

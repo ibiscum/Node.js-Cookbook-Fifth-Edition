@@ -6,7 +6,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --fix"
+    "lint": "eslint --fix ."
   },
   "keywords": [],
   "author": "",
@@ -14,33 +14,5 @@
   "dependencies": {
     "eslint": "^9.39.1",
     "ndjson": "^2.0.0"
-  },
-  "workspaces": [
-    "chapter03/object-streams",
-    "chapter04/streams-fs",
-    "chapter04/server-smtp",
-    "chapter05/websocket-server",
-    "chapter05/consuming-modules",
-    "chapter05/ecmascript-modules",
-    "chapter05/temperature-converter",
-    "chapter06/fastify-restaurant",
-    "chapter07/fastify-graphql",
-    "chapter07/fastify-mysql",
-    "chapter07/mysql-app",
-    "chapter07/postgres-app",
-    "chapter07/postgres-object-app",
-    "chapter07/mongodb-app",
-    "chapter07/redis-app",
-    "chapter08/testing-with-node",
-    "chapter08/testing-with-jest",
-    "chapter08/stubbing-http-requests",
-    "chapter08/using-puppeteer",
-    "chapter10/benchmarking-http",
-    "chapter10/benchmarking-views",
-    "chapter10/optimize-async",
-    "chapter10/flamegraph-app",
-    "chapter11/bookstore-web-app",
-    "chapter12/core-debug-logs",
-    "chapter12/debugging-with-chrome"
-  ]
+  }
 }
