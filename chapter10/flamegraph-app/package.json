@@ -10,9 +10,9 @@
     "0x": "^6.0.0",
     "autocannon": "^8.0.0",
     "cookie-parser": "~1.4.7",
-    "debug": "~4.4.1",
-    "express": "~5.2.0",
-    "http-errors": "~2.0.0",
+    "debug": "~4.4.3",
+    "express": "~5.2.1",
+    "http-errors": "~2.0.1",
     "morgan": "~1.10.1",
     "pug": "^3.0.3",
     "smtp-server": "3.18.1"
