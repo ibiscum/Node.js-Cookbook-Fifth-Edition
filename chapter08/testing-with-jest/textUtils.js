@@ -12,7 +12,7 @@ function capitalize (str) {
    str.slice(1).toLowerCase();
 }
 
-module.exports = { 
+export default { 
   lowercase, 
   uppercase, 
   capitalize 
