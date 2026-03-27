@@ -2,6 +2,7 @@
 
 [![CodeQL Advanced](https://github.com/ibiscum/Node.js-Cookbook-Fifth-Edition/actions/workflows/codeql.yml/badge.svg)](https://github.com/ibiscum/Node.js-Cookbook-Fifth-Edition/actions/workflows/codeql.yml)
 [![Dependabot Updates](https://github.com/ibiscum/Node.js-Cookbook-Fifth-Edition/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ibiscum/Node.js-Cookbook-Fifth-Edition/actions/workflows/dependabot/dependabot-updates)
+[![ESLint](https://github.com/ibiscum/Node.js-Cookbook-Fifth-Edition/actions/workflows/lint.yml/badge.svg)](https://github.com/ibiscum/Node.js-Cookbook-Fifth-Edition/actions/workflows/lint.yml)
 
 <a href="https://www.packtpub.com/en-us/product/nodejs-cookbook-9781804614105"><img src="https://content.packt.com/B19212/cover_image_small.jpg" alt="" height="256px" align="right"></a>
 
